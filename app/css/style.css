@@ -5,7 +5,6 @@
 }
 
 body{
-    background-color: #eeeeee;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -36,10 +35,6 @@ form{
     text-align: right;
     padding-right: 2rem;
     color: transparent;
-    text-shadow: 0 0 0 black;
-    background-color: #eeeeee;
-    box-shadow: inset 4px 4px 10px #cfcfcf,
-                inset -4px -4px 10px #ffffff;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -59,9 +54,7 @@ input[type=number]::-webkit-outer-spin-button {
     border-radius: 3rem;
     font-size: 2em;
     font-weight: lighter;
-    background-color: #eeeeee;
-    box-shadow: 4px 4px 10px#cfcfcf,
-                -4px -4px 10px #ffffff;
+    transition: 0.3s;
 }
 
 .btn:focus{
@@ -74,4 +67,51 @@ input[type=number]::-webkit-outer-spin-button {
 
 #clear{
     grid-column: 1/3;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #eeeeee;
+    }
+    #num-input{
+        text-shadow: 0 0 0 black;
+        background-color: #eeeeee;
+        box-shadow: inset 4px 4px 10px #cfcfcf,
+                    inset -4px -4px 10px #ffffff;
+    }
+    .btn{
+        background-color: #eeeeee;
+        box-shadow: 4px 4px 10px#cfcfcf,
+                    -4px -4px 10px #ffffff;
+    }
+    .btn:hover{
+        background-color: #e6e6e6;
+    }
+    .btn:active{
+        background-color: #cfcfcf;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #313131;
+    }
+    #num-input{
+        text-shadow: 0 0 0 #f6f6f6;
+        background-color: #313131;
+        box-shadow: inset 4px 4px 10px #242424,
+                    inset -4px -4px 10px #3a3a3a;
+    }
+    .btn{
+        color: white;
+        background-color: #313131;
+        box-shadow: 4px 4px 10px#242424,
+                    -4px -4px 10px #3a3a3a;
+    }
+    .btn:hover{
+        background-color: #2b2b2b;
+    }
+    .btn:active{
+        background-color: #242424;
+    }
 }

@@ -1,0 +1,25 @@
+{
+  "name": "neumorphiccalc",
+  "version": "1.0.0",
+  "description": "Simple calculator with neumorphic design",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "nodemon --exec electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit-00/neumorphiccalc.git"
+  },
+  "author": "Amit Verma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amit-00/neumorphiccalc/issues"
+  },
+  "homepage": "https://github.com/amit-00/neumorphiccalc#readme",
+  "devDependencies": {
+    "electron": "^9.0.4",
+    "electron-packager": "^14.2.1",
+    "nodemon": "^2.0.4"
+  }
+}

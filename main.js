@@ -13,7 +13,7 @@ function createMainWindow () {
     mainWindow = new BrowserWindow({
         title: "Calculator",
         width: isDev ? 1100 : 500,
-        height: 600,
+        height: 700,
         // icon: `${__dirname}/assets/icons/Icon_256x256.png`,
         resizable: isDev,
         backgroundColor: 'white',
